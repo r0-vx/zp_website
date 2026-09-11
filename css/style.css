@@ -1,6 +1,6 @@
 :root {
   /* Change this one value to update the site's main accent color. */
-  --theme-color: #00cfdecf;
+  --theme-color: #ff9900cf;
   --orange: var(--theme-color);
   --orange-dark: var(--theme-color);
   --orange-light: #fff0e5;
