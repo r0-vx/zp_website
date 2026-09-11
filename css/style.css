@@ -11,6 +11,9 @@
   --border: #ddd6cf;
   --text: #222;
 }
+html[lang="mr"] body {
+  font-family: "Nirmala UI", "Noto Sans Devanagari", Mangal, Arial, sans-serif;
+}
 * {
   box-sizing: border-box;
 }
