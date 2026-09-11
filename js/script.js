@@ -64,6 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
   var path = location.pathname.toLowerCase();
   var contact = `<section class="section visit-contact"><div><h2>Visit &amp; Contact Us</h2><iframe class="map-frame" title="Map showing Z.P. School Gokhiware" src="https://www.google.com/maps?q=19.4000038,72.8436215&amp;z=17&amp;output=embed" loading="lazy"></iframe><p><a class="button" href="https://maps.app.goo.gl/RkrtoRguzrPcqfsQ9" target="_blank" rel="noopener">Open in Google Maps</a></p></div><div class="contact-details"><h2>Visit &amp; Contact Us</h2><p><strong>Z.P. School Gokhiware</strong><br>Gokhivare Road,<br>Gokhivare Naka,<br>Golani Naka,<br>Vasai East,<br>Maharashtra – 401208</p><h3>Principal</h3><p><span class="placeholder">[Principal Name]</span><br>Principal, Z.P. School Gokhiware<br>☎ +91 98765 43210<br>✉ principal@example.com</p><h3>School Contact</h3><p><span class="placeholder">[Contact Person Name]</span><br>School Office<br>☎ +91 98765 43211<br>✉ school@example.com</p></div></section>`;
   if (path.endsWith("index.html") || path.endsWith("/")) {
+    if (document.documentElement.lang === "mr")
+      main.querySelectorAll(".visit-contact").forEach(function (section) {
+        section.remove();
+      });
     var old = main.querySelector("table");
     if (old) {
       var sec = old.closest(".section");
