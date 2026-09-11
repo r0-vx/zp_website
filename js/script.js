@@ -1,0 +1,30 @@
+document.addEventListener("DOMContentLoaded", function () {
+  var b = document.querySelector(".nav-toggle"),
+    n = document.querySelector(".nav-links");
+  if (b && n)
+    b.addEventListener("click", function () {
+      var open = n.classList.toggle("open");
+      b.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  var footer = document.querySelector(".footer");
+  if (footer)
+    footer.innerHTML = `<div class="footer-columns"><div><h2>Z.P. School Gokhiware</h2><p>Committed to accessible and meaningful education for every child.</p></div><div><h2>Quick Links</h2><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="academics.html">Academics</a></li><li><a href="activities.html">Activities</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="notices.html">Notices</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><h2>Connect With Us</h2><p>⌖ Z.P. School Gokhiware<br>Gokhivare Road,<br>Gokhivare Naka,<br>Golani Naka,<br>Vasai East,<br>Maharashtra – 401208</p><p>☎ +91 98765 43210<br>✉ school@example.com</p></div></div><div class="footer-bottom">© 2026 Z.P. School Gokhiware<br>Developed under Community Engagement Project — Fr. Conceicao Rodrigues College of Engineering</div>`;
+  var main = document.querySelector("main");
+  if (!main) return;
+  var path = location.pathname.toLowerCase();
+  var contact = `<section class="section visit-contact"><div><h2>Visit &amp; Contact Us</h2><iframe class="map-frame" title="Map showing Z.P. School Gokhiware" src="https://www.google.com/maps?q=19.4000038,72.8436215&amp;z=17&amp;output=embed" loading="lazy"></iframe><p><a class="button" href="https://maps.app.goo.gl/RkrtoRguzrPcqfsQ9" target="_blank" rel="noopener">Open in Google Maps</a></p></div><div class="contact-details"><h2>Visit &amp; Contact Us</h2><p><strong>Z.P. School Gokhiware</strong><br>Gokhivare Road,<br>Gokhivare Naka,<br>Golani Naka,<br>Vasai East,<br>Maharashtra – 401208</p><h3>Principal</h3><p><span class="placeholder">[Principal Name]</span><br>Principal, Z.P. School Gokhiware<br>☎ +91 98765 43210<br>✉ principal@example.com</p><h3>School Contact</h3><p><span class="placeholder">[Contact Person Name]</span><br>School Office<br>☎ +91 98765 43211<br>✉ school@example.com</p></div></section>`;
+  if (
+    document.documentElement.lang !== "mr" &&
+    (path.endsWith("index.html") || path.endsWith("/"))
+  ) {
+    var old = main.querySelector("table");
+    if (old) {
+      var sec = old.closest(".section");
+      sec.outerHTML =
+        `<section class="section home-about"><div><h2>About Our School</h2><p>Zilla Parishad School Gokhiware is a government school serving students from the local community. The school provides education from Class 1 to Class 8 and focuses on accessible education, discipline, academic development and participation in school activities.</p><p>The school works towards creating a supportive learning environment for students while encouraging academic, cultural and community participation.</p><p class="muted"><span class="placeholder">Medium, student count, teacher count and school timings: To be updated</span></p></div><div class="school-photo" role="img" aria-label="School photo placeholder">SCHOOL PHOTO</div></section>` +
+        contact;
+    }
+  } else if (path.endsWith("contact.html")) {
+    main.innerHTML = '<p class="breadcrumb">Home / Contact</p>' + contact;
+  }
+});
