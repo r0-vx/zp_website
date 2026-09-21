@@ -1,6 +1,6 @@
 :root {
   /* Change this one value to update the site's main accent color. */
-  --theme-color: #ff9900cf;
+  --theme-color: #ffa200;
   --orange: var(--theme-color);
   --orange-dark: var(--theme-color);
   --orange-light: #fff0e5;
@@ -122,7 +122,7 @@ button:focus {
 .banner {
   min-height: 275px;
   background: var(--cream);
-  background-image: url("../images/school-banner.png");
+  background-image: url("../images/school-banner.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -225,6 +225,8 @@ th {
   height: 145px;
   background: var(--cream);
   border: 1px solid var(--border);
+  object-fit: cover;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
