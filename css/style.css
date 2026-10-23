@@ -201,6 +201,107 @@ button:focus {
 .table-wrap {
   overflow-x: auto;
 }
+.textbook-heading p {
+  margin-top: -2px;
+  color: #555;
+}
+.textbook-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  gap: 18px;
+  align-items: start;
+}
+.textbook-results {
+  min-width: 0;
+}
+.textbook-results-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.textbook-results-head h4 {
+  margin: 0;
+  color: var(--charcoal);
+  font-size: 18px;
+}
+.textbook-source-link {
+  font-size: 13px;
+  white-space: nowrap;
+}
+.textbook-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.textbook-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 14px;
+  box-shadow: 0 1px 3px rgba(43, 43, 43, 0.05);
+}
+.textbook-card h5 {
+  margin: 0 0 8px;
+  color: var(--charcoal);
+  font-size: 16px;
+  line-height: 1.35;
+}
+.textbook-meta {
+  margin: 4px 0;
+  color: #555;
+  font-size: 13px;
+}
+.textbook-download {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 7px 10px;
+  border: 1px solid var(--orange-dark);
+  background: var(--orange);
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+}
+.textbook-download:hover {
+  background: var(--orange-dark);
+}
+.class-selector {
+  position: sticky;
+  top: 12px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  background: var(--orange-light);
+}
+.class-selector h4 {
+  margin: 0 0 10px;
+  color: var(--charcoal);
+  font-size: 16px;
+}
+.class-selector-list {
+  display: grid;
+  gap: 6px;
+}
+.class-button {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+.class-button:hover,
+.class-button.active {
+  border-color: var(--orange-dark);
+  background: var(--orange);
+  color: #fff;
+}
+.textbook-source-note {
+  margin-bottom: 0;
+  color: #666;
+  font-size: 13px;
+}
 table {
   width: 100%;
   border-collapse: collapse;
@@ -358,6 +459,24 @@ th {
   }
   .footer {
     padding: 22px 16px;
+  }
+  .textbook-layout {
+    grid-template-columns: 1fr;
+  }
+  .class-selector {
+    position: static;
+    order: -1;
+  }
+  .textbook-grid {
+    grid-template-columns: 1fr;
+  }
+  .textbook-results-head {
+    display: block;
+  }
+  .textbook-source-link {
+    display: inline-block;
+    margin-top: 5px;
+    white-space: normal;
   }
 }
 .nav-links {

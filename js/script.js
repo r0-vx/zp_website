@@ -49,6 +49,100 @@
     } catch (error) {
       // Language preference is optional when storage is unavailable.
     }
+
+    if (typeof window.updateTextbookLanguage === "function") {
+      window.updateTextbookLanguage(language);
+    }
+  }
+
+  function getTranslation(language, key) {
+    return translations[language][key] || translations.en[key] || key;
+  }
+
+  function renderTextbooks(language, selectedClass) {
+    var grid = document.getElementById("textbook-grid");
+    var title = document.getElementById("textbook-class-title");
+    var books = window.textbookData && window.textbookData[selectedClass];
+    var className = getTranslation(language, "class_" + selectedClass);
+
+    if (!grid || !title || !books) {
+      return;
+    }
+
+    title.textContent = getTranslation(language, "textbooks_for_class").replace("{class}", className);
+    grid.textContent = "";
+
+    books.forEach(function (book) {
+      var card = document.createElement("article");
+      var cardTitle = document.createElement("h5");
+      var subject = document.createElement("p");
+      var medium = document.createElement("p");
+      var link = document.createElement("a");
+      var subjectLabel = document.createElement("strong");
+      var mediumLabel = document.createElement("strong");
+
+      card.className = "textbook-card";
+      cardTitle.textContent = language === "mr" ? book.titleMr : book.titleEn;
+      subject.className = "textbook-meta";
+      medium.className = "textbook-meta";
+      subjectLabel.textContent = getTranslation(language, "textbook_subject") + ": ";
+      mediumLabel.textContent = getTranslation(language, "textbook_language") + ": ";
+      subject.appendChild(subjectLabel);
+      subject.appendChild(document.createTextNode(language === "mr" ? book.subjectMr : book.subjectEn));
+      medium.appendChild(mediumLabel);
+      medium.appendChild(document.createTextNode(getTranslation(language, "marathi_medium")));
+      link.className = "textbook-download";
+      link.href = "https://ebooks.ebalbharati.in/pdfs/" + book.pdf + ".pdf";
+      link.target = "_blank";
+      link.rel = "noopener";
+      link.textContent = getTranslation(language, "open_textbook");
+
+      card.appendChild(cardTitle);
+      card.appendChild(subject);
+      card.appendChild(medium);
+      card.appendChild(link);
+      grid.appendChild(card);
+    });
+  }
+
+  function initTextbookBrowser() {
+    var selector = document.getElementById("class-selector-list");
+    var grid = document.getElementById("textbook-grid");
+    var selectedClass = 1;
+
+    if (!selector || !grid || !window.textbookData) {
+      return;
+    }
+
+    for (var classNumber = 1; classNumber <= 8; classNumber += 1) {
+      var button = document.createElement("button");
+      button.className = "class-button";
+      button.type = "button";
+      button.setAttribute("data-class", classNumber);
+      button.textContent = translations.en["class_" + classNumber];
+
+      button.addEventListener("click", function () {
+        selectedClass = Number(this.getAttribute("data-class"));
+        document.querySelectorAll(".class-button").forEach(function (item) {
+          var active = Number(item.getAttribute("data-class")) === selectedClass;
+          item.classList.toggle("active", active);
+          item.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+        renderTextbooks(document.documentElement.lang || "en", selectedClass);
+      });
+
+      selector.appendChild(button);
+    }
+
+    window.updateTextbookLanguage = function (language) {
+      selector.querySelectorAll(".class-button").forEach(function (button) {
+        var number = button.getAttribute("data-class");
+        button.textContent = getTranslation(language, "class_" + number);
+      });
+      renderTextbooks(language, selectedClass);
+    };
+
+    selector.querySelector(".class-button").click();
   }
 
   window.setLanguage = setLanguage;
@@ -70,6 +164,7 @@
       });
     });
 
+    initTextbookBrowser();
     setLanguage(readLanguage());
   });
 })();

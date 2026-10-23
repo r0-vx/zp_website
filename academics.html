@@ -26,21 +26,26 @@
       <p class="breadcrumb"><span data-i18n="breadcrumb_home">Home</span> / <span data-i18n="breadcrumb_academics">Academics</span></p>
       <section class="section">
         <h2 data-i18n="academics_overview">Academic Overview</h2>
-        <p data-i18n="academics_intro">Academic information will be maintained here for students and parents. The school currently lists classes from Class 1 to Class 8.</p>
-        <h3 data-i18n="classes_offered">Classes Offered</h3>
-        <div class="table-wrap"><table>
-          <thead><tr><th data-i18n="class_label">Class</th><th data-i18n="subjects_details">Subjects / Details</th></tr></thead>
-          <tbody>
-            <tr><td data-i18n="class_1">Class 1</td><td rowspan="8"><span class="placeholder" data-i18n="to_be_updated">To be updated</span></td></tr>
-            <tr><td data-i18n="class_2">Class 2</td></tr>
-            <tr><td data-i18n="class_3">Class 3</td></tr>
-            <tr><td data-i18n="class_4">Class 4</td></tr>
-            <tr><td data-i18n="class_5">Class 5</td></tr>
-            <tr><td data-i18n="class_6">Class 6</td></tr>
-            <tr><td data-i18n="class_7">Class 7</td></tr>
-            <tr><td data-i18n="class_8">Class 8</td></tr>
-          </tbody>
-        </table></div>
+        <div class="textbook-browser" id="textbook-section">
+          <div class="textbook-heading">
+            <h3 data-i18n="textbooks_title">Marathi Medium Textbooks</h3>
+            <p data-i18n="textbooks_intro">Select a class to view the available Maharashtra State Board textbooks.</p>
+          </div>
+          <div class="textbook-layout">
+            <div class="textbook-results" aria-live="polite">
+              <div class="textbook-results-head">
+                <h4 id="textbook-class-title">Textbooks for Class 1</h4>
+                <a class="textbook-source-link" href="https://books.ebalbharati.in/ebook.aspx" target="_blank" rel="noopener" data-i18n="official_textbooks">Official textbook source</a>
+              </div>
+              <div class="textbook-grid" id="textbook-grid"></div>
+            </div>
+            <aside class="class-selector" aria-labelledby="class-selector-title">
+              <h4 id="class-selector-title" data-i18n="choose_class">Choose Class</h4>
+              <div class="class-selector-list" id="class-selector-list"></div>
+            </aside>
+          </div>
+          <p class="textbook-source-note"><span data-i18n="textbooks_source_note">Textbook links open the official eBalbharati PDF library.</span> <a href="https://books.ebalbharati.in/ebook.aspx" target="_blank" rel="noopener">eBalbharati</a>.</p>
+        </div>
         <h3 data-i18n="subjects">Subjects</h3>
         <p><span class="placeholder" data-i18n="subject_list_placeholder">Subject list to be updated</span></p>
         <h3 data-i18n="school_timings">School Timings</h3>
@@ -60,6 +65,7 @@
       <div class="footer-bottom"><span data-i18n="footer_copyright">© 2026 Z.P. School Gokhiware</span><br /><span data-i18n="footer_developed">Developed under Community Engagement Project</span> — <span data-i18n="footer_college">Fr. Conceicao Rodrigues College of Engineering</span></div>
     </footer>
     <script src="js/translations.js"></script>
+    <script src="js/textbooks.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
