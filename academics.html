@@ -3,109 +3,63 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Academics | Z.P. School Gokhiware</title>
+    <title data-i18n="title_academics">Academics | Z.P. School Gokhiware</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <a class="skip" href="#main-content" data-i18n="skip_content">Skip to content</a>
     <div class="gov-strip">
-      <span>Government of Maharashtra | महाराष्ट्र शासन</span
-      ><span><a href="#main-content">Skip to Content</a></span>
+      <span data-i18n="government_strip">Government of Maharashtra | महाराष्ट्र शासन</span>
+      <span><a href="#main-content" data-i18n="skip_content">Skip to Content</a> | <button class="language-button" type="button" data-lang="en" data-i18n="language_english" aria-pressed="true">English</button> | <button class="language-button" type="button" data-lang="mr" data-i18n="language_marathi" aria-pressed="false">मराठी</button></span>
     </div>
     <header class="masthead">
-      <div class="logo" role="img" aria-label="School logo placeholder">
-        SCHOOL<br />LOGO
-      </div>
-      <div class="school-name">
-        <h1>ZILLA PARISHAD SCHOOL GOKHIWARE</h1>
-        <p>जिल्हा परिषद शाळा, गोखीवरे</p>
-        <small>Gokhiware, Maharashtra</small>
-      </div>
+      <div class="logo" role="img" data-i18n-aria="school_logo_placeholder" aria-label="School logo placeholder"><span data-i18n="school_logo_line_1">SCHOOL</span><br /><span data-i18n="school_logo_line_2">LOGO</span></div>
+      <div class="school-name"><h1 data-i18n="school_name">ZILLA PARISHAD SCHOOL GOKHIWARE</h1><p data-i18n="school_name_marathi">जिल्हा परिषद शाळा, गोखीवरे</p><small data-i18n="school_location">Gokhiware, Maharashtra</small></div>
     </header>
-    <nav class="navbar" aria-label="Main navigation">
-      <button
-        class="nav-toggle"
-        aria-expanded="false"
-        aria-controls="nav-links"
-      >
-        ☰ MENU
-      </button>
+    <nav class="navbar" data-i18n-aria="main_navigation" aria-label="Main navigation">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n="menu">☰ MENU</button>
       <div id="nav-links" class="nav-links">
-        <a href="index.html">HOME</a><a href="about.html">ABOUT US</a
-        ><a class="active" href="academics.html">ACADEMICS</a
-        ><a href="activities.html">ACTIVITIES</a
-        ><a href="gallery.html">GALLERY</a><a href="notices.html">NOTICES</a
-        ><a href="contact.html">CONTACT</a>
+        <a href="index.html" data-i18n="nav_home">HOME</a><a href="about.html" data-i18n="nav_about">ABOUT US</a><a class="active" href="academics.html" data-i18n="nav_academics" aria-current="page">ACADEMICS</a><a href="activities.html" data-i18n="nav_activities">ACTIVITIES</a><a href="gallery.html" data-i18n="nav_gallery">GALLERY</a><a href="notices.html" data-i18n="nav_notices">NOTICES</a><a href="contact.html" data-i18n="nav_contact">CONTACT</a>
       </div>
     </nav>
     <main id="main-content" class="container">
-      <p class="breadcrumb">Home / Academics</p>
+      <p class="breadcrumb"><span data-i18n="breadcrumb_home">Home</span> / <span data-i18n="breadcrumb_academics">Academics</span></p>
       <section class="section">
-        <h2>Academic Overview</h2>
-        <p>
-          Academic information will be maintained here for students and parents.
-          The school currently lists classes from Class 1 to Class 8.
-        </p>
-        <h3>Classes Offered</h3>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Class</th>
-                <th>Subjects / Details</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Class 1</td>
-                <td rowspan="8">
-                  <span class="placeholder">To be updated</span>
-                </td>
-              </tr>
-              <tr>
-                <td>Class 2</td>
-              </tr>
-              <tr>
-                <td>Class 3</td>
-              </tr>
-              <tr>
-                <td>Class 4</td>
-              </tr>
-              <tr>
-                <td>Class 5</td>
-              </tr>
-              <tr>
-                <td>Class 6</td>
-              </tr>
-              <tr>
-                <td>Class 7</td>
-              </tr>
-              <tr>
-                <td>Class 8</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <h3>Subjects</h3>
-        <p><span class="placeholder">Subject list to be updated</span></p>
-        <h3>School Timings</h3>
-        <p><span class="placeholder">To be updated</span></p>
-        <h3>Examinations</h3>
-        <p>
-          <span class="placeholder">Examination details to be updated</span>
-        </p>
-        <h3>Academic Calendar</h3>
-        <p><span class="placeholder">Academic calendar to be updated</span></p>
+        <h2 data-i18n="academics_overview">Academic Overview</h2>
+        <p data-i18n="academics_intro">Academic information will be maintained here for students and parents. The school currently lists classes from Class 1 to Class 8.</p>
+        <h3 data-i18n="classes_offered">Classes Offered</h3>
+        <div class="table-wrap"><table>
+          <thead><tr><th data-i18n="class_label">Class</th><th data-i18n="subjects_details">Subjects / Details</th></tr></thead>
+          <tbody>
+            <tr><td data-i18n="class_1">Class 1</td><td rowspan="8"><span class="placeholder" data-i18n="to_be_updated">To be updated</span></td></tr>
+            <tr><td data-i18n="class_2">Class 2</td></tr>
+            <tr><td data-i18n="class_3">Class 3</td></tr>
+            <tr><td data-i18n="class_4">Class 4</td></tr>
+            <tr><td data-i18n="class_5">Class 5</td></tr>
+            <tr><td data-i18n="class_6">Class 6</td></tr>
+            <tr><td data-i18n="class_7">Class 7</td></tr>
+            <tr><td data-i18n="class_8">Class 8</td></tr>
+          </tbody>
+        </table></div>
+        <h3 data-i18n="subjects">Subjects</h3>
+        <p><span class="placeholder" data-i18n="subject_list_placeholder">Subject list to be updated</span></p>
+        <h3 data-i18n="school_timings">School Timings</h3>
+        <p><span class="placeholder" data-i18n="to_be_updated">To be updated</span></p>
+        <h3 data-i18n="examinations">Examinations</h3>
+        <p><span class="placeholder" data-i18n="examination_details_placeholder">Examination details to be updated</span></p>
+        <h3 data-i18n="academic_calendar">Academic Calendar</h3>
+        <p><span class="placeholder" data-i18n="academic_calendar_placeholder">Academic calendar to be updated</span></p>
       </section>
     </main>
     <footer class="footer">
-      <p><strong>Zilla Parishad School Gokhiware</strong></p>
-      <p>Gokhiware, Maharashtra</p>
-      <p>© 2026 Z.P. School Gokhiware</p>
-      <p>
-        Developed under Community Engagement Project<br />Fr. Conceicao
-        Rodrigues College of Engineering
-      </p>
+      <div class="footer-columns">
+        <div><h2 data-i18n="school_name_short">Z.P. School Gokhiware</h2><p data-i18n="footer_description">Committed to accessible and meaningful education for every child.</p></div>
+        <div><h2 data-i18n="footer_quick_links">Quick Links</h2><ul class="footer-links"><li><a href="index.html" data-i18n="nav_home">Home</a></li><li><a href="about.html" data-i18n="nav_about">About Us</a></li><li><a href="academics.html" data-i18n="nav_academics">Academics</a></li><li><a href="activities.html" data-i18n="nav_activities">Activities</a></li><li><a href="gallery.html" data-i18n="nav_gallery">Gallery</a></li><li><a href="notices.html" data-i18n="nav_notices">Notices</a></li><li><a href="contact.html" data-i18n="nav_contact">Contact</a></li></ul></div>
+        <div><h2 data-i18n="footer_connect">Connect With Us</h2><p>⌖ <span data-i18n="school_name_short">Z.P. School Gokhiware</span><br /><span data-i18n="address_road">Gokhivare Road</span>,<br /><span data-i18n="address_naka">Gokhivare Naka</span>,<br /><span data-i18n="address_golani">Golani Naka</span>,<br /><span data-i18n="address_vasai">Vasai East</span>,<br /><span data-i18n="address_state">Maharashtra – 401208</span></p><p>☎ +91 98765 43210<br />✉ school@example.com</p></div>
+      </div>
+      <div class="footer-bottom"><span data-i18n="footer_copyright">© 2026 Z.P. School Gokhiware</span><br /><span data-i18n="footer_developed">Developed under Community Engagement Project</span> — <span data-i18n="footer_college">Fr. Conceicao Rodrigues College of Engineering</span></div>
     </footer>
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

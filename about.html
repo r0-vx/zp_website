@@ -3,119 +3,61 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>About Us | Z.P. School Gokhiware</title>
+    <title data-i18n="title_about">About Us | Z.P. School Gokhiware</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <a class="skip" href="#main-content" data-i18n="skip_content">Skip to content</a>
     <div class="gov-strip">
-      <span>Government of Maharashtra | महाराष्ट्र शासन</span
-      ><span
-        ><a href="#main-content">Skip to Content</a> | English |
-        <a href="mr/about.html">मराठी</a></span
-      >
+      <span data-i18n="government_strip">Government of Maharashtra | महाराष्ट्र शासन</span>
+      <span><a href="#main-content" data-i18n="skip_content">Skip to Content</a> | <button class="language-button" type="button" data-lang="en" data-i18n="language_english" aria-pressed="true">English</button> | <button class="language-button" type="button" data-lang="mr" data-i18n="language_marathi" aria-pressed="false">मराठी</button></span>
     </div>
     <header class="masthead">
-      <div class="logo" role="img" aria-label="School logo placeholder">
-        SCHOOL<br />LOGO
-      </div>
-      <div class="school-name">
-        <h1>ZILLA PARISHAD SCHOOL GOKHIWARE</h1>
-        <p>जिल्हा परिषद शाळा, गोखीवरे</p>
-        <small>Gokhiware, Maharashtra</small>
-      </div>
+      <div class="logo" role="img" data-i18n-aria="school_logo_placeholder" aria-label="School logo placeholder"><span data-i18n="school_logo_line_1">SCHOOL</span><br /><span data-i18n="school_logo_line_2">LOGO</span></div>
+      <div class="school-name"><h1 data-i18n="school_name">ZILLA PARISHAD SCHOOL GOKHIWARE</h1><p data-i18n="school_name_marathi">जिल्हा परिषद शाळा, गोखीवरे</p><small data-i18n="school_location">Gokhiware, Maharashtra</small></div>
     </header>
-    <nav class="navbar" aria-label="Main navigation">
-      <button
-        class="nav-toggle"
-        aria-expanded="false"
-        aria-controls="nav-links"
-      >
-        ☰ MENU
-      </button>
+    <nav class="navbar" data-i18n-aria="main_navigation" aria-label="Main navigation">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n="menu">☰ MENU</button>
       <div id="nav-links" class="nav-links">
-        <a href="index.html">HOME</a
-        ><a class="active" href="about.html">ABOUT US</a
-        ><a href="academics.html">ACADEMICS</a
-        ><a href="activities.html">ACTIVITIES</a
-        ><a href="gallery.html">GALLERY</a><a href="notices.html">NOTICES</a
-        ><a href="contact.html">CONTACT</a>
+        <a href="index.html" data-i18n="nav_home">HOME</a><a class="active" href="about.html" data-i18n="nav_about" aria-current="page">ABOUT US</a><a href="academics.html" data-i18n="nav_academics">ACADEMICS</a><a href="activities.html" data-i18n="nav_activities">ACTIVITIES</a><a href="gallery.html" data-i18n="nav_gallery">GALLERY</a><a href="notices.html" data-i18n="nav_notices">NOTICES</a><a href="contact.html" data-i18n="nav_contact">CONTACT</a>
       </div>
     </nav>
     <main id="main-content" class="container">
-      <p class="breadcrumb">Home / About Us</p>
+      <p class="breadcrumb"><span data-i18n="breadcrumb_home">Home</span> / <span data-i18n="breadcrumb_about">About Us</span></p>
       <section class="section">
-        <h2>About the School</h2>
-        <p>
-          This page shares verified information about Zilla Parishad School
-          Gokhiware. Details marked
-          <span class="placeholder">To be updated</span> await confirmation.
-        </p>
-        <h3>School History</h3>
-        <p><span class="placeholder">School history to be updated</span></p>
-        <h3>Vision</h3>
-        <p>
-          To support inclusive, meaningful and responsible learning for every
-          child.
-        </p>
-        <h3>Mission</h3>
-        <p>
-          To encourage education, discipline, curiosity and the overall
-          development of students.
-        </p>
-        <h3>Headmaster's Message</h3>
-        <p>
-          <span class="placeholder"
-            >[Headmaster Name] — message to be updated</span
-          >
-        </p>
+        <h2 data-i18n="about_school_title">About the School</h2>
+        <p><span data-i18n="about_intro_before">This page shares verified information about Zilla Parishad School Gokhiware. Details marked</span> <span class="placeholder" data-i18n="to_be_updated">To be updated</span> <span data-i18n="about_intro_after">await confirmation.</span></p>
+        <h3 data-i18n="school_history">School History</h3>
+        <p><span class="placeholder" data-i18n="school_history_placeholder">School history to be updated</span></p>
+        <h3 data-i18n="vision">Vision</h3>
+        <p data-i18n="vision_text">To support inclusive, meaningful and responsible learning for every child.</p>
+        <h3 data-i18n="mission">Mission</h3>
+        <p data-i18n="mission_text">To encourage education, discipline, curiosity and the overall development of students.</p>
+        <h3 data-i18n="headmaster_message">Headmaster's Message</h3>
+        <p><span class="placeholder" data-i18n="headmaster_placeholder">[Headmaster Name] — message to be updated</span></p>
       </section>
       <section class="section">
-        <h2>Basic School Details</h2>
-        <div class="table-wrap">
-          <table>
-            <tbody>
-              <tr>
-                <th>School Name</th>
-                <td>Zilla Parishad School Gokhiware</td>
-              </tr>
-              <tr>
-                <th>Address</th>
-                <td><span class="placeholder">[School Address]</span></td>
-              </tr>
-              <tr>
-                <th>Year Established</th>
-                <td><span class="placeholder">To be updated</span></td>
-              </tr>
-              <tr>
-                <th>Management</th>
-                <td>Government / Zilla Parishad</td>
-              </tr>
-              <tr>
-                <th>UDISE Code</th>
-                <td><span class="placeholder">To be updated</span></td>
-              </tr>
-              <tr>
-                <th>Medium</th>
-                <td><span class="placeholder">To be updated</span></td>
-              </tr>
-              <tr>
-                <th>Classes</th>
-                <td>Class 1 to Class 8</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <h2 data-i18n="basic_school_details">Basic School Details</h2>
+        <div class="table-wrap"><table><tbody>
+          <tr><th data-i18n="school_name_label">School Name</th><td data-i18n="school_name_short">Z.P. School Gokhiware</td></tr>
+          <tr><th data-i18n="address_label">Address</th><td><span class="placeholder" data-i18n="school_address_placeholder">[School Address]</span></td></tr>
+          <tr><th data-i18n="year_established">Year Established</th><td><span class="placeholder" data-i18n="to_be_updated">To be updated</span></td></tr>
+          <tr><th data-i18n="management">Management</th><td data-i18n="management_value">Government / Zilla Parishad</td></tr>
+          <tr><th data-i18n="udise_code">UDISE Code</th><td><span class="placeholder" data-i18n="to_be_updated">To be updated</span></td></tr>
+          <tr><th data-i18n="medium">Medium</th><td><span class="placeholder" data-i18n="to_be_updated">To be updated</span></td></tr>
+          <tr><th data-i18n="classes">Classes</th><td data-i18n="classes_1_to_8">Class 1 to Class 8</td></tr>
+        </tbody></table></div>
       </section>
     </main>
     <footer class="footer">
-      <p><strong>Zilla Parishad School Gokhiware</strong></p>
-      <p>Gokhiware, Maharashtra</p>
-      <p>© 2026 Z.P. School Gokhiware</p>
-      <p>
-        Developed under Community Engagement Project<br />Fr. Conceicao
-        Rodrigues College of Engineering
-      </p>
+      <div class="footer-columns">
+        <div><h2 data-i18n="school_name_short">Z.P. School Gokhiware</h2><p data-i18n="footer_description">Committed to accessible and meaningful education for every child.</p></div>
+        <div><h2 data-i18n="footer_quick_links">Quick Links</h2><ul class="footer-links"><li><a href="index.html" data-i18n="nav_home">Home</a></li><li><a href="about.html" data-i18n="nav_about">About Us</a></li><li><a href="academics.html" data-i18n="nav_academics">Academics</a></li><li><a href="activities.html" data-i18n="nav_activities">Activities</a></li><li><a href="gallery.html" data-i18n="nav_gallery">Gallery</a></li><li><a href="notices.html" data-i18n="nav_notices">Notices</a></li><li><a href="contact.html" data-i18n="nav_contact">Contact</a></li></ul></div>
+        <div><h2 data-i18n="footer_connect">Connect With Us</h2><p>⌖ <span data-i18n="school_name_short">Z.P. School Gokhiware</span><br /><span data-i18n="address_road">Gokhivare Road</span>,<br /><span data-i18n="address_naka">Gokhivare Naka</span>,<br /><span data-i18n="address_golani">Golani Naka</span>,<br /><span data-i18n="address_vasai">Vasai East</span>,<br /><span data-i18n="address_state">Maharashtra – 401208</span></p><p>☎ +91 98765 43210<br />✉ school@example.com</p></div>
+      </div>
+      <div class="footer-bottom"><span data-i18n="footer_copyright">© 2026 Z.P. School Gokhiware</span><br /><span data-i18n="footer_developed">Developed under Community Engagement Project</span> — <span data-i18n="footer_college">Fr. Conceicao Rodrigues College of Engineering</span></div>
     </footer>
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

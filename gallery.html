@@ -3,112 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Gallery | Z.P. School Gokhiware</title>
+    <title data-i18n="title_gallery">Gallery | Z.P. School Gokhiware</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <a class="skip" href="#main-content" data-i18n="skip_content">Skip to content</a>
     <div class="gov-strip">
-      <span>Government of Maharashtra | महाराष्ट्र शासन</span
-      ><span
-        ><a href="#main-content">Skip to Content</a> | English |
-        <a href="mr/gallery.html">मराठी</a></span
-      >
+      <span data-i18n="government_strip">Government of Maharashtra | महाराष्ट्र शासन</span>
+      <span><a href="#main-content" data-i18n="skip_content">Skip to Content</a> | <button class="language-button" type="button" data-lang="en" data-i18n="language_english" aria-pressed="true">English</button> | <button class="language-button" type="button" data-lang="mr" data-i18n="language_marathi" aria-pressed="false">मराठी</button></span>
     </div>
     <header class="masthead">
-      <div class="logo" role="img" aria-label="School logo placeholder">
-        SCHOOL<br />LOGO
-      </div>
-      <div class="school-name">
-        <h1>ZILLA PARISHAD SCHOOL GOKHIWARE</h1>
-        <p>जिल्हा परिषद शाळा, गोखीवरे</p>
-        <small>Gokhiware, Maharashtra</small>
-      </div>
+      <div class="logo" role="img" data-i18n-aria="school_logo_placeholder" aria-label="School logo placeholder"><span data-i18n="school_logo_line_1">SCHOOL</span><br /><span data-i18n="school_logo_line_2">LOGO</span></div>
+      <div class="school-name"><h1 data-i18n="school_name">ZILLA PARISHAD SCHOOL GOKHIWARE</h1><p data-i18n="school_name_marathi">जिल्हा परिषद शाळा, गोखीवरे</p><small data-i18n="school_location">Gokhiware, Maharashtra</small></div>
     </header>
-    <nav class="navbar" aria-label="Main navigation">
-      <button
-        class="nav-toggle"
-        aria-expanded="false"
-        aria-controls="nav-links"
-      >
-        ☰ MENU
-      </button>
+    <nav class="navbar" data-i18n-aria="main_navigation" aria-label="Main navigation">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n="menu">☰ MENU</button>
       <div id="nav-links" class="nav-links">
-        <a href="index.html">HOME</a><a href="about.html">ABOUT US</a
-        ><a href="academics.html">ACADEMICS</a
-        ><a href="activities.html">ACTIVITIES</a
-        ><a class="active" href="gallery.html">GALLERY</a
-        ><a href="notices.html">NOTICES</a><a href="contact.html">CONTACT</a>
+        <a href="index.html" data-i18n="nav_home">HOME</a><a href="about.html" data-i18n="nav_about">ABOUT US</a><a href="academics.html" data-i18n="nav_academics">ACADEMICS</a><a href="activities.html" data-i18n="nav_activities">ACTIVITIES</a><a class="active" href="gallery.html" data-i18n="nav_gallery" aria-current="page">GALLERY</a><a href="notices.html" data-i18n="nav_notices">NOTICES</a><a href="contact.html" data-i18n="nav_contact">CONTACT</a>
       </div>
     </nav>
     <main id="main-content" class="container">
-      <p class="breadcrumb">Home / Gallery</p>
+      <p class="breadcrumb"><span data-i18n="breadcrumb_home">Home</span> / <span data-i18n="breadcrumb_gallery">Gallery</span></p>
       <section class="section">
-        <h2>School Gallery</h2>
-        <p>
-          Photographs can be added to the <code>images/gallery</code> folder and
-          replace these placeholders.
-        </p>
+        <h2 data-i18n="school_gallery">School Gallery</h2>
+        <p><span data-i18n="gallery_intro_before">Photographs can be added to the</span> <code>images/gallery</code> <span data-i18n="gallery_intro_after">folder and replace these placeholders.</span></p>
         <div class="gallery-grid">
-          <figure class="gallery-item">
-            <img
-              class="photo"
-              src="images/gallery/students-prayer.jpeg"
-              alt="Students participating in a school prayer"
-            />
-            <figcaption>School Prayer</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img
-              class="photo"
-              src="images/gallery/classroom-learning.jpeg"
-              alt="Students learning in a classroom"
-            />
-            <figcaption>Classroom</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img
-              class="photo"
-              src="images/gallery/creative-workshop.jpeg"
-              alt="Student participating in a creative workshop"
-            />
-            <figcaption>School Activity</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img
-              class="photo"
-              src="images/gallery/classroom-cultural.jpeg"
-              alt="Students taking part in a classroom cultural activity"
-            />
-            <figcaption>Cultural Activity</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img
-              class="photo"
-              src="images/gallery/school-event.jpeg"
-              alt="School event with teachers and guests"
-            />
-            <figcaption>Celebration</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img
-              class="photo"
-              src="images/gallery/student-achievement.jpeg"
-              alt="Students presenting their achievements"
-            />
-            <figcaption>Student Achievement</figcaption>
-          </figure>
+          <figure class="gallery-item"><img class="photo" src="images/gallery/students-prayer.jpeg" alt="Students participating in a school prayer" data-i18n-alt="alt_prayer" /><figcaption data-i18n="caption_prayer">School Prayer</figcaption></figure>
+          <figure class="gallery-item"><img class="photo" src="images/gallery/classroom-learning.jpeg" alt="Students learning in a classroom" data-i18n-alt="alt_classroom" /><figcaption data-i18n="caption_classroom">Classroom</figcaption></figure>
+          <figure class="gallery-item"><img class="photo" src="images/gallery/creative-workshop.jpeg" alt="Student participating in a creative workshop" data-i18n-alt="alt_workshop" /><figcaption data-i18n="caption_workshop">School Activity</figcaption></figure>
+          <figure class="gallery-item"><img class="photo" src="images/gallery/classroom-cultural.jpeg" alt="Students taking part in a classroom cultural activity" data-i18n-alt="alt_cultural" /><figcaption data-i18n="caption_cultural">Cultural Activity</figcaption></figure>
+          <figure class="gallery-item"><img class="photo" src="images/gallery/school-event.jpeg" alt="School event with teachers and guests" data-i18n-alt="alt_event" /><figcaption data-i18n="caption_event">Celebration</figcaption></figure>
+          <figure class="gallery-item"><img class="photo" src="images/gallery/student-achievement.jpeg" alt="Students presenting their achievements" data-i18n-alt="alt_achievement" /><figcaption data-i18n="caption_achievement">Student Achievement</figcaption></figure>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <p><strong>Zilla Parishad School Gokhiware</strong></p>
-      <p>Gokhiware, Maharashtra</p>
-      <p>© 2026 Z.P. School Gokhiware</p>
-      <p>
-        Developed under Community Engagement Project<br />Fr. Conceicao
-        Rodrigues College of Engineering
-      </p>
+      <div class="footer-columns">
+        <div><h2 data-i18n="school_name_short">Z.P. School Gokhiware</h2><p data-i18n="footer_description">Committed to accessible and meaningful education for every child.</p></div>
+        <div><h2 data-i18n="footer_quick_links">Quick Links</h2><ul class="footer-links"><li><a href="index.html" data-i18n="nav_home">Home</a></li><li><a href="about.html" data-i18n="nav_about">About Us</a></li><li><a href="academics.html" data-i18n="nav_academics">Academics</a></li><li><a href="activities.html" data-i18n="nav_activities">Activities</a></li><li><a href="gallery.html" data-i18n="nav_gallery">Gallery</a></li><li><a href="notices.html" data-i18n="nav_notices">Notices</a></li><li><a href="contact.html" data-i18n="nav_contact">Contact</a></li></ul></div>
+        <div><h2 data-i18n="footer_connect">Connect With Us</h2><p>⌖ <span data-i18n="school_name_short">Z.P. School Gokhiware</span><br /><span data-i18n="address_road">Gokhivare Road</span>,<br /><span data-i18n="address_naka">Gokhivare Naka</span>,<br /><span data-i18n="address_golani">Golani Naka</span>,<br /><span data-i18n="address_vasai">Vasai East</span>,<br /><span data-i18n="address_state">Maharashtra – 401208</span></p><p>☎ +91 98765 43210<br />✉ school@example.com</p></div>
+      </div>
+      <div class="footer-bottom"><span data-i18n="footer_copyright">© 2026 Z.P. School Gokhiware</span><br /><span data-i18n="footer_developed">Developed under Community Engagement Project</span> — <span data-i18n="footer_college">Fr. Conceicao Rodrigues College of Engineering</span></div>
     </footer>
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

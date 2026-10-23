@@ -3,102 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Activities | Z.P. School Gokhiware</title>
+    <title data-i18n="title_activities">Activities | Z.P. School Gokhiware</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <a class="skip" href="#main-content" data-i18n="skip_content">Skip to content</a>
     <div class="gov-strip">
-      <span>Government of Maharashtra | महाराष्ट्र शासन</span
-      ><span
-        ><a href="#main-content">Skip to Content</a> | English |
-        <a href="mr/activities.html">मराठी</a></span
-      >
+      <span data-i18n="government_strip">Government of Maharashtra | महाराष्ट्र शासन</span>
+      <span><a href="#main-content" data-i18n="skip_content">Skip to Content</a> | <button class="language-button" type="button" data-lang="en" data-i18n="language_english" aria-pressed="true">English</button> | <button class="language-button" type="button" data-lang="mr" data-i18n="language_marathi" aria-pressed="false">मराठी</button></span>
     </div>
     <header class="masthead">
-      <div class="logo" role="img" aria-label="School logo placeholder">
-        SCHOOL<br />LOGO
-      </div>
-      <div class="school-name">
-        <h1>ZILLA PARISHAD SCHOOL GOKHIWARE</h1>
-        <p>जिल्हा परिषद शाळा, गोखीवरे</p>
-        <small>Gokhiware, Maharashtra</small>
-      </div>
+      <div class="logo" role="img" data-i18n-aria="school_logo_placeholder" aria-label="School logo placeholder"><span data-i18n="school_logo_line_1">SCHOOL</span><br /><span data-i18n="school_logo_line_2">LOGO</span></div>
+      <div class="school-name"><h1 data-i18n="school_name">ZILLA PARISHAD SCHOOL GOKHIWARE</h1><p data-i18n="school_name_marathi">जिल्हा परिषद शाळा, गोखीवरे</p><small data-i18n="school_location">Gokhiware, Maharashtra</small></div>
     </header>
-    <nav class="navbar" aria-label="Main navigation">
-      <button
-        class="nav-toggle"
-        aria-expanded="false"
-        aria-controls="nav-links"
-      >
-        ☰ MENU
-      </button>
+    <nav class="navbar" data-i18n-aria="main_navigation" aria-label="Main navigation">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n="menu">☰ MENU</button>
       <div id="nav-links" class="nav-links">
-        <a href="index.html">HOME</a><a href="about.html">ABOUT US</a
-        ><a href="academics.html">ACADEMICS</a
-        ><a class="active" href="activities.html">ACTIVITIES</a
-        ><a href="gallery.html">GALLERY</a><a href="notices.html">NOTICES</a
-        ><a href="contact.html">CONTACT</a>
+        <a href="index.html" data-i18n="nav_home">HOME</a><a href="about.html" data-i18n="nav_about">ABOUT US</a><a href="academics.html" data-i18n="nav_academics">ACADEMICS</a><a class="active" href="activities.html" data-i18n="nav_activities" aria-current="page">ACTIVITIES</a><a href="gallery.html" data-i18n="nav_gallery">GALLERY</a><a href="notices.html" data-i18n="nav_notices">NOTICES</a><a href="contact.html" data-i18n="nav_contact">CONTACT</a>
       </div>
     </nav>
     <main id="main-content" class="container">
-      <p class="breadcrumb">Home / Activities</p>
+      <p class="breadcrumb"><span data-i18n="breadcrumb_home">Home</span> / <span data-i18n="breadcrumb_activities">Activities</span></p>
       <section class="section">
-        <h2>School Activities</h2>
+        <h2 data-i18n="school_activities">School Activities</h2>
         <div class="activity-grid">
-          <article class="activity">
-            <h3>Sports</h3>
-            <p>
-              Encouraging fitness, teamwork and participation.
-              <span class="placeholder">Details to be updated</span>
-            </p>
-          </article>
-          <article class="activity">
-            <h3>Cultural Activities</h3>
-            <p>
-              Opportunities for students to express themselves through culture.
-              <span class="placeholder">Details to be updated</span>
-            </p>
-          </article>
-          <article class="activity">
-            <h3>Art and Drawing</h3>
-            <p>Creative activities that support observation and imagination.</p>
-          </article>
-          <article class="activity">
-            <h3>Educational Activities</h3>
-            <p>
-              Learning activities beyond the classroom.
-              <span class="placeholder">Details to be updated</span>
-            </p>
-          </article>
-          <article class="activity">
-            <h3>National Festivals</h3>
-            <p>Celebrating the values and heritage of our nation.</p>
-          </article>
-          <article class="activity">
-            <h3>School Celebrations</h3>
-            <p>
-              School events and important days.
-              <span class="placeholder">Details to be updated</span>
-            </p>
-          </article>
-          <article class="activity">
-            <h3>Community Activities</h3>
-            <p>
-              Building awareness, responsibility and community participation.
-            </p>
-          </article>
+          <article class="activity"><h3 data-i18n="sports">Sports</h3><p><span data-i18n="sports_text">Encouraging fitness, teamwork and participation.</span> <span class="placeholder" data-i18n="details_to_be_updated">Details to be updated</span></p></article>
+          <article class="activity"><h3 data-i18n="cultural_activities">Cultural Activities</h3><p><span data-i18n="cultural_text">Opportunities for students to express themselves through culture.</span> <span class="placeholder" data-i18n="details_to_be_updated">Details to be updated</span></p></article>
+          <article class="activity"><h3 data-i18n="art_drawing">Art and Drawing</h3><p data-i18n="art_drawing_text">Creative activities that support observation and imagination.</p></article>
+          <article class="activity"><h3 data-i18n="educational_activities">Educational Activities</h3><p><span data-i18n="educational_text">Learning activities beyond the classroom.</span> <span class="placeholder" data-i18n="details_to_be_updated">Details to be updated</span></p></article>
+          <article class="activity"><h3 data-i18n="national_festivals">National Festivals</h3><p data-i18n="national_festivals_text">Celebrating the values and heritage of our nation.</p></article>
+          <article class="activity"><h3 data-i18n="school_celebrations">School Celebrations</h3><p><span data-i18n="school_celebrations_text">School events and important days.</span> <span class="placeholder" data-i18n="details_to_be_updated">Details to be updated</span></p></article>
+          <article class="activity"><h3 data-i18n="community_activities">Community Activities</h3><p data-i18n="community_text">Building awareness, responsibility and community participation.</p></article>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <p><strong>Zilla Parishad School Gokhiware</strong></p>
-      <p>Gokhiware, Maharashtra</p>
-      <p>© 2026 Z.P. School Gokhiware</p>
-      <p>
-        Developed under Community Engagement Project<br />Fr. Conceicao
-        Rodrigues College of Engineering
-      </p>
+      <div class="footer-columns">
+        <div><h2 data-i18n="school_name_short">Z.P. School Gokhiware</h2><p data-i18n="footer_description">Committed to accessible and meaningful education for every child.</p></div>
+        <div><h2 data-i18n="footer_quick_links">Quick Links</h2><ul class="footer-links"><li><a href="index.html" data-i18n="nav_home">Home</a></li><li><a href="about.html" data-i18n="nav_about">About Us</a></li><li><a href="academics.html" data-i18n="nav_academics">Academics</a></li><li><a href="activities.html" data-i18n="nav_activities">Activities</a></li><li><a href="gallery.html" data-i18n="nav_gallery">Gallery</a></li><li><a href="notices.html" data-i18n="nav_notices">Notices</a></li><li><a href="contact.html" data-i18n="nav_contact">Contact</a></li></ul></div>
+        <div><h2 data-i18n="footer_connect">Connect With Us</h2><p>⌖ <span data-i18n="school_name_short">Z.P. School Gokhiware</span><br /><span data-i18n="address_road">Gokhivare Road</span>,<br /><span data-i18n="address_naka">Gokhivare Naka</span>,<br /><span data-i18n="address_golani">Golani Naka</span>,<br /><span data-i18n="address_vasai">Vasai East</span>,<br /><span data-i18n="address_state">Maharashtra – 401208</span></p><p>☎ +91 98765 43210<br />✉ school@example.com</p></div>
+      </div>
+      <div class="footer-bottom"><span data-i18n="footer_copyright">© 2026 Z.P. School Gokhiware</span><br /><span data-i18n="footer_developed">Developed under Community Engagement Project</span> — <span data-i18n="footer_college">Fr. Conceicao Rodrigues College of Engineering</span></div>
     </footer>
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -42,6 +42,18 @@ button:focus {
   gap: 12px;
   flex-wrap: wrap;
 }
+.language-button {
+  background: transparent;
+  border: 0;
+  color: var(--orange-dark);
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  text-decoration: underline;
+}
+.language-button.active {
+  font-weight: bold;
+}
 .masthead {
   background: #fff;
   padding: 18px 32px;
