@@ -9,12 +9,27 @@
   <body>
     <a class="skip" href="#main-content" data-i18n="skip_content">Skip to content</a>
     <div class="gov-strip">
-      <span data-i18n="government_strip">Government of Maharashtra | महाराष्ट्र शासन</span>
-      <span><a href="#main-content" data-i18n="skip_content">Skip to Content</a> | <button class="language-button" type="button" data-lang="en" data-i18n="language_english" aria-pressed="true">English</button> | <button class="language-button" type="button" data-lang="mr" data-i18n="language_marathi" aria-pressed="false">मराठी</button></span>
+      <div class="gov-brand">
+        <img class="tricolor-mark" src="images/header/tricolor-mark.png" alt="" />
+        <span class="gov-short" data-i18n="maharashtra_government">महाराष्ट्र शासन</span>
+        <span class="gov-separator" aria-hidden="true">|</span>
+        <span class="gov-long" data-i18n="government_of_maharashtra">GOVERNMENT OF MAHARASHTRA</span>
+      </div>
+      <div class="gov-tools">
+        <a class="gov-skip" href="#main-content" data-i18n="skip_content">Skip to content</a>
+        <span class="utility-divider" aria-hidden="true">|</span>
+        <button class="language-button" type="button" data-lang="en" data-i18n="language_english" aria-pressed="true">English</button>
+        <span aria-hidden="true">|</span>
+        <button class="language-button" type="button" data-lang="mr" data-i18n="language_marathi" aria-pressed="false">मराठी</button>
+        <span class="utility-cell" aria-hidden="true">⇥</span>
+        <span class="utility-cell language-symbol" aria-hidden="true">अ<br />A</span>
+        <span class="utility-cell accessibility-symbol" data-i18n-aria="accessibility_label" aria-label="Accessibility">♿</span>
+      </div>
     </div>
     <header class="masthead">
-      <div class="logo" role="img" data-i18n-aria="school_logo_placeholder" aria-label="School logo placeholder"><span data-i18n="school_logo_line_1">SCHOOL</span><br /><span data-i18n="school_logo_line_2">LOGO</span></div>
+      <img class="official-emblem" src="images/header/logo.png" data-i18n-aria="government_emblem" aria-label="Government emblem" alt="Government emblem" />
       <div class="school-name"><h1 data-i18n="school_name">ZILLA PARISHAD SCHOOL GOKHIWARE</h1><p data-i18n="school_name_marathi">जिल्हा परिषद शाळा, गोखीवरे</p><small data-i18n="school_location">Gokhiware, Maharashtra</small></div>
+      <img class="state-seal" src="images/header/emblem.svg" data-i18n-aria="state_seal" aria-label="Maharashtra government emblem" alt="Maharashtra government emblem" />
     </header>
     <nav class="navbar" data-i18n-aria="main_navigation" aria-label="Main navigation">
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n="menu">☰ MENU</button>

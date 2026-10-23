@@ -2,6 +2,11 @@ var translations = {
   en: {
     skip_content: "Skip to content",
     government_strip: "Government of Maharashtra | महाराष्ट्र शासन",
+    maharashtra_government: "महाराष्ट्र शासन",
+    government_of_maharashtra: "GOVERNMENT OF MAHARASHTRA",
+    government_emblem: "Government emblem",
+    state_seal: "Maharashtra government emblem",
+    accessibility_label: "Accessibility",
     language_english: "English",
     language_marathi: "मराठी",
     school_logo_placeholder: "School logo placeholder",
@@ -182,6 +187,11 @@ var translations = {
   mr: {
     skip_content: "मुख्य मजकुराकडे जा",
     government_strip: "महाराष्ट्र शासन | Government of Maharashtra",
+    maharashtra_government: "महाराष्ट्र शासन",
+    government_of_maharashtra: "GOVERNMENT OF MAHARASHTRA",
+    government_emblem: "शासकीय चिन्ह",
+    state_seal: "महाराष्ट्र शासनाचे चिन्ह",
+    accessibility_label: "सुलभता",
     language_english: "English",
     language_marathi: "मराठी",
     school_logo_placeholder: "शाळेचा लोगो",
