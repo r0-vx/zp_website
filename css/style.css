@@ -479,6 +479,174 @@ th {
     white-space: normal;
   }
 }
+
+/* Lightweight teachers dashboard styles. The dashboard keeps the public site palette and layout language. */
+.dashboard-intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 24px 0;
+  padding: 24px;
+  border: 1px solid var(--border);
+  background: var(--cream);
+}
+.dashboard-intro h2,
+.dashboard-card h2 {
+  margin: 0 0 8px;
+  color: var(--dark);
+}
+.dashboard-intro p:last-child {
+  margin: 0;
+}
+.eyebrow {
+  margin: 0 0 6px;
+  color: var(--orange-dark);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.dashboard-card {
+  margin: 0 0 24px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(43, 43, 43, 0.05);
+}
+.dashboard-login {
+  max-width: 560px;
+}
+.dashboard-content[hidden],
+.dashboard-card[hidden],
+#teacher-signout[hidden] {
+  display: none;
+}
+.demo-credentials,
+.dashboard-note {
+  padding: 12px 14px;
+  border-left: 4px solid var(--orange);
+  background: var(--orange-light);
+}
+.demo-credentials code {
+  color: var(--orange-dark);
+  font-weight: bold;
+}
+.dashboard-form {
+  display: grid;
+  gap: 8px;
+}
+.dashboard-form h3 {
+  margin: 18px 0 2px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+  color: var(--charcoal);
+  font-size: 17px;
+}
+.dashboard-form label {
+  color: var(--charcoal);
+  font-size: 14px;
+  font-weight: bold;
+}
+.dashboard-form input {
+  width: 100%;
+  min-height: 40px;
+  box-sizing: border-box;
+  padding: 9px 10px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: #fff;
+  color: var(--text);
+  font: inherit;
+}
+.dashboard-form input:focus {
+  outline: 2px solid var(--orange);
+  outline-offset: 1px;
+  border-color: var(--orange-dark);
+}
+.login-form {
+  max-width: 360px;
+}
+.form-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: end;
+  margin-bottom: 22px;
+}
+.form-grid-wide {
+  grid-column: 1 / -1;
+}
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.dashboard-wide {
+  grid-column: 1 / -1;
+}
+.dashboard-card-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.dashboard-table-wrap {
+  margin-top: 16px;
+}
+.dashboard-table-wrap table {
+  min-width: 620px;
+}
+.button-secondary {
+  background: var(--charcoal);
+}
+.button-secondary:hover,
+.button-secondary:focus {
+  background: var(--dark);
+}
+.button-danger {
+  padding: 7px 10px;
+  background: #8f2d16;
+  font-size: 13px;
+}
+.button-danger:hover,
+.button-danger:focus {
+  background: #6d2010;
+}
+.form-message {
+  min-height: 1.3em;
+  margin: 12px 0;
+  color: var(--charcoal);
+}
+.error-message {
+  color: #8f2d16;
+  font-weight: bold;
+}
+.success-message {
+  color: #276b35;
+  font-weight: bold;
+}
+.dashboard-note {
+  margin: 20px 0;
+  font-size: 14px;
+}
+@media (max-width: 760px) {
+  .dashboard-intro {
+    display: block;
+    padding: 18px;
+  }
+  .dashboard-intro .button {
+    margin-top: 16px;
+  }
+  .dashboard-grid,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-grid-wide {
+    grid-column: auto;
+  }
+  .dashboard-card {
+    padding: 18px;
+  }
+}
 .nav-links {
   width: 100%;
   justify-content: center;

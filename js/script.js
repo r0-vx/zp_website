@@ -53,6 +53,10 @@
     if (typeof window.updateTextbookLanguage === "function") {
       window.updateTextbookLanguage(language);
     }
+
+    if (window.ZPSiteData && typeof window.ZPSiteData.applyPublicData === "function") {
+      window.ZPSiteData.applyPublicData();
+    }
   }
 
   function getTranslation(language, key) {

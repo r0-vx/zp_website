@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "id": "zp_teacher_01",
+      "role": "teacher",
+      "passwordHash": "ca60a9f8a5d82931db3cf16b5d33d5c5881d7a401369d4398852764acc4804a5",
+      "active": true
+    }
+  ]
+}

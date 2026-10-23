@@ -59,7 +59,7 @@
         </section>
         <section class="section">
           <h2 data-i18n="latest_notices">Latest Notices</h2>
-          <ul class="notice-list">
+          <ul class="notice-list" id="latest-notice-list">
             <li><a href="notices.html" data-i18n="admission_notice">Admission Notice</a></li>
             <li><a href="notices.html" data-i18n="holiday_notice">Holiday Notice</a></li>
             <li><a href="notices.html" data-i18n="examination_schedule">Examination Schedule</a></li>
@@ -73,7 +73,7 @@
           <h2 data-i18n="home_about_title">About Our School</h2>
           <p data-i18n="home_about_para_1">Zilla Parishad School Gokhiware is a government school serving students from the local community. The school provides education from Class 1 to Class 8 and focuses on accessible education, discipline, academic development and participation in school activities.</p>
           <p data-i18n="home_about_para_2">The school works towards creating a supportive learning environment for students while encouraging academic, cultural and community participation.</p>
-          <p class="muted"><span class="placeholder" data-i18n="home_about_placeholder">Medium, student count, teacher count and school timings: To be updated</span></p>
+          <p class="muted"><span id="public-school-summary" class="placeholder" data-i18n="home_about_placeholder">Medium, student count, teacher count and school timings: To be updated</span></p>
         </div>
         <div class="school-photo" role="img" data-i18n-aria="school_photo_label" aria-label="School photo placeholder" data-i18n="school_photo_text">SCHOOL PHOTO</div>
       </section>
@@ -85,23 +85,24 @@
         </div>
         <div class="contact-details">
           <h2 data-i18n="visit_contact">Visit &amp; Contact Us</h2>
-          <p><strong data-i18n="school_name_short">Z.P. School Gokhiware</strong><br /><span data-i18n="address_road">Gokhivare Road</span>,<br /><span data-i18n="address_naka">Gokhivare Naka</span>,<br /><span data-i18n="address_golani">Golani Naka</span>,<br /><span data-i18n="address_vasai">Vasai East</span>,<br /><span data-i18n="address_state">Maharashtra – 401208</span></p>
+          <p><strong data-i18n="school_name_short">Z.P. School Gokhiware</strong><br /><span id="public-address-road" data-i18n="address_road">Gokhivare Road</span>,<br /><span id="public-address-naka" data-i18n="address_naka">Gokhivare Naka</span>,<br /><span id="public-address-golani" data-i18n="address_golani">Golani Naka</span>,<br /><span id="public-address-vasai" data-i18n="address_vasai">Vasai East</span>,<br /><span id="public-address-state" data-i18n="address_state">Maharashtra – 401208</span></p>
           <h3 data-i18n="principal">Principal</h3>
-          <p><span class="placeholder" data-i18n="principal_placeholder">[Principal Name]</span><br /><span data-i18n="principal_role">Principal, Z.P. School Gokhiware</span><br />☎ +91 98765 43210<br />✉ principal@example.com</p>
+          <p><span id="public-principal-name" class="placeholder" data-i18n="principal_placeholder">[Principal Name]</span><br /><span data-i18n="principal_role">Principal, Z.P. School Gokhiware</span><br />☎ <span id="public-principal-phone">+91 98765 43210</span><br />✉ <span id="public-principal-email">principal@example.com</span></p>
           <h3 data-i18n="school_contact">School Contact</h3>
-          <p><span class="placeholder" data-i18n="contact_placeholder">[Contact Person Name]</span><br /><span data-i18n="school_office">School Office</span><br />☎ +91 98765 43211<br />✉ school@example.com</p>
+          <p><span id="public-school-contact-name" class="placeholder" data-i18n="contact_placeholder">[Contact Person Name]</span><br /><span data-i18n="school_office">School Office</span><br />☎ <span id="public-school-phone">+91 98765 43211</span><br />✉ <span id="public-school-email">school@example.com</span></p>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer-columns">
         <div><h2 data-i18n="school_name_short">Z.P. School Gokhiware</h2><p data-i18n="footer_description">Committed to accessible and meaningful education for every child.</p></div>
-        <div><h2 data-i18n="footer_quick_links">Quick Links</h2><ul class="footer-links"><li><a href="index.html" data-i18n="nav_home">Home</a></li><li><a href="about.html" data-i18n="nav_about">About Us</a></li><li><a href="academics.html" data-i18n="nav_academics">Academics</a></li><li><a href="activities.html" data-i18n="nav_activities">Activities</a></li><li><a href="gallery.html" data-i18n="nav_gallery">Gallery</a></li><li><a href="notices.html" data-i18n="nav_notices">Notices</a></li><li><a href="contact.html" data-i18n="nav_contact">Contact</a></li></ul></div>
+        <div><h2 data-i18n="footer_quick_links">Quick Links</h2><ul class="footer-links"><li><a href="index.html" data-i18n="nav_home">Home</a></li><li><a href="about.html" data-i18n="nav_about">About Us</a></li><li><a href="academics.html" data-i18n="nav_academics">Academics</a></li><li><a href="activities.html" data-i18n="nav_activities">Activities</a></li><li><a href="gallery.html" data-i18n="nav_gallery">Gallery</a></li><li><a href="notices.html" data-i18n="nav_notices">Notices</a></li><li><a href="contact.html" data-i18n="nav_contact">Contact</a></li><li><a href="teachers.html">Teachers Login</a></li></ul></div>
         <div><h2 data-i18n="footer_connect">Connect With Us</h2><p>⌖ <span data-i18n="school_name_short">Z.P. School Gokhiware</span><br /><span data-i18n="address_road">Gokhivare Road</span>,<br /><span data-i18n="address_naka">Gokhivare Naka</span>,<br /><span data-i18n="address_golani">Golani Naka</span>,<br /><span data-i18n="address_vasai">Vasai East</span>,<br /><span data-i18n="address_state">Maharashtra – 401208</span></p><p>☎ +91 98765 43210<br />✉ school@example.com</p></div>
       </div>
       <div class="footer-bottom"><span data-i18n="footer_copyright">© 2026 Z.P. School Gokhiware</span><br /><span data-i18n="footer_developed">Developed under Community Engagement Project</span> — <span data-i18n="footer_college">Fr. Conceicao Rodrigues College of Engineering</span></div>
     </footer>
     <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/site-data.js"></script>
   </body>
 </html>

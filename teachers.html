@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Teachers Dashboard | Z.P. School Gokhiware</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="dashboard-page">
+    <a class="skip" href="#main-content">Skip to content</a>
+    <div class="gov-strip">
+      <div class="gov-brand">
+        <img class="tricolor-mark" src="images/header/tricolor-mark.png" alt="" />
+        <span class="gov-short">महाराष्ट्र शासन</span>
+        <span class="gov-separator" aria-hidden="true">|</span>
+        <span class="gov-long">GOVERNMENT OF MAHARASHTRA</span>
+      </div>
+      <div class="gov-tools">
+        <a class="gov-skip" href="#main-content">Skip to content</a>
+        <span class="utility-divider" aria-hidden="true">|</span>
+        <button class="language-button" type="button" data-lang="en" aria-pressed="true">English</button>
+        <span aria-hidden="true">|</span>
+        <button class="language-button" type="button" data-lang="mr" aria-pressed="false">मराठी</button>
+        <span class="utility-cell" aria-hidden="true">⇥</span>
+        <span class="utility-cell language-symbol" aria-hidden="true">अ<br />A</span>
+        <span class="utility-cell accessibility-symbol" aria-label="Accessibility">♿</span>
+      </div>
+    </div>
+    <header class="masthead">
+      <img class="official-emblem" src="images/header/logo.png" alt="Government emblem" />
+      <div class="school-name"><h1>ZILLA PARISHAD SCHOOL GOKHIWARE</h1><p>जिल्हा परिषद शाळा, गोखीवरे</p><small>Gokhiware, Maharashtra</small></div>
+      <img class="state-seal" src="images/header/emblem.svg" alt="Maharashtra government emblem" />
+    </header>
+    <nav class="navbar" aria-label="Main navigation">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">☰ MENU</button>
+      <div id="nav-links" class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="academics.html">ACADEMICS</a>
+        <a href="activities.html">ACTIVITIES</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="notices.html">NOTICES</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+    </nav>
+    <main id="main-content" class="container">
+      <p class="breadcrumb">Home / Teachers Dashboard</p>
+      <section class="dashboard-intro">
+        <div>
+          <p class="eyebrow">INTERNAL DEMO AREA</p>
+          <h2>Teachers Dashboard</h2>
+          <p>Update notices, contact details and basic school information for this browser preview.</p>
+        </div>
+        <button id="teacher-signout" class="button button-secondary" type="button" hidden>Sign out</button>
+      </section>
+
+      <section id="teacher-login-panel" class="dashboard-card dashboard-login" aria-labelledby="teacher-login-title">
+        <h2 id="teacher-login-title">Teacher Sign-in</h2>
+        <p class="dashboard-note">Sign-in details are issued privately by the administrator.</p>
+        <form id="teacher-login-form" class="dashboard-form login-form">
+          <label for="teacher-username">Username</label>
+          <input id="teacher-username" name="username" type="text" autocomplete="username" required />
+          <label for="teacher-password">Password</label>
+          <input id="teacher-password" name="password" type="password" autocomplete="current-password" required />
+          <button class="button" type="submit">Sign in</button>
+        </form>
+        <p id="teacher-login-message" class="form-message" aria-live="polite"></p>
+      </section>
+
+      <section id="teacher-dashboard-panel" class="dashboard-content" hidden>
+        <p id="dashboard-status" class="form-message" aria-live="polite"></p>
+        <div class="dashboard-grid">
+          <section class="dashboard-card dashboard-wide" aria-labelledby="manage-notices-title">
+            <div class="dashboard-card-heading">
+              <div><p class="eyebrow">CONTENT MANAGEMENT</p><h2 id="manage-notices-title">Manage Notices</h2></div>
+            </div>
+            <form id="notice-form" class="dashboard-form form-grid">
+              <div><label for="notice-date">Date</label><input id="notice-date" type="text" placeholder="DD/MM/YYYY" /></div>
+              <div><label for="notice-category">Category</label><input id="notice-category" type="text" placeholder="Academic" /></div>
+              <div class="form-grid-wide"><label for="notice-title">Notice title</label><input id="notice-title" type="text" required /></div>
+              <div class="form-grid-wide"><label for="notice-title-marathi">Marathi title <span class="muted">(optional)</span></label><input id="notice-title-marathi" type="text" /></div>
+              <div><label for="notice-category-marathi">Marathi category <span class="muted">(optional)</span></label><input id="notice-category-marathi" type="text" /></div>
+              <div><label for="notice-url">PDF/link URL <span class="muted">(optional)</span></label><input id="notice-url" type="text" placeholder="documents/notice.pdf" /></div>
+              <div class="form-grid-wide"><button class="button" type="submit">Add Notice</button></div>
+            </form>
+            <div class="table-wrap dashboard-table-wrap">
+              <table>
+                <thead><tr><th>Date</th><th>Notice</th><th>Category</th><th>Action</th></tr></thead>
+                <tbody id="dashboard-notice-body"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="dashboard-card" aria-labelledby="contact-editor-title">
+            <p class="eyebrow">SCHOOL DIRECTORY</p>
+            <h2 id="contact-editor-title">Contact Details</h2>
+            <form id="contact-form" class="dashboard-form">
+              <h3>Address</h3>
+              <label for="contact-address-road">Road</label><input id="contact-address-road" type="text" />
+              <label for="contact-address-naka">Naka</label><input id="contact-address-naka" type="text" />
+              <label for="contact-address-golani">Area</label><input id="contact-address-golani" type="text" />
+              <label for="contact-address-vasai">City / region</label><input id="contact-address-vasai" type="text" />
+              <label for="contact-address-state">State and PIN</label><input id="contact-address-state" type="text" />
+              <h3>Principal</h3>
+              <label for="principal-name">Name</label><input id="principal-name" type="text" />
+              <label for="principal-phone">Phone</label><input id="principal-phone" type="tel" />
+              <label for="principal-email">Email</label><input id="principal-email" type="email" />
+              <h3>School Contact</h3>
+              <label for="school-contact-name">Name</label><input id="school-contact-name" type="text" />
+              <label for="school-phone">Phone</label><input id="school-phone" type="tel" />
+              <label for="school-email">Email</label><input id="school-email" type="email" />
+              <button class="button" type="submit">Save Contact Details</button>
+            </form>
+          </section>
+
+          <section class="dashboard-card" aria-labelledby="school-editor-title">
+            <p class="eyebrow">SCHOOL INFORMATION</p>
+            <h2 id="school-editor-title">Basic School Information</h2>
+            <form id="school-form" class="dashboard-form">
+              <label for="school-medium">Medium</label><input id="school-medium" type="text" />
+              <label for="school-students">Student count</label><input id="school-students" type="text" />
+              <label for="school-teachers">Teacher count</label><input id="school-teachers" type="text" />
+              <label for="school-timing">School timing</label><input id="school-timing" type="text" />
+              <button class="button" type="submit">Save School Information</button>
+            </form>
+            <div class="dashboard-note"><strong>Demo storage:</strong> Changes are saved only in this browser using local storage. They are not shared with other devices or visitors.</div>
+            <button id="reset-demo-data" class="button button-secondary" type="button">Reset Demo Data</button>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-columns">
+        <div><h2>Z.P. School Gokhiware</h2><p>Committed to accessible and meaningful education for every child.</p></div>
+        <div><h2>Quick Links</h2><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="academics.html">Academics</a></li><li><a href="activities.html">Activities</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="notices.html">Notices</a></li><li><a href="contact.html">Contact</a></li><li><a href="teachers.html">Teachers Login</a></li></ul></div>
+        <div><h2>Connect With Us</h2><p>⌖ Z.P. School Gokhiware<br />Gokhivare Road,<br />Gokhivare Naka,<br />Vasai East,<br />Maharashtra – 401208</p></div>
+      </div>
+      <div class="footer-bottom">© 2026 Z.P. School Gokhiware<br />Developed under Community Engagement Project — Fr. Conceicao Rodrigues College of Engineering</div>
+    </footer>
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/site-data.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
