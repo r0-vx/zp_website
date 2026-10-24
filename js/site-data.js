@@ -43,9 +43,9 @@
       schoolEmail: ""
     },
     school: {
-      medium: "To be updated",
-      students: "To be updated",
-      teachers: "To be updated",
+      medium: "Marathi",
+      students: "525",
+      teachers: "17",
       timing: "To be updated"
     }
   };
@@ -67,10 +67,23 @@
       return copy(defaultData);
     }
 
+    var school = Object.assign({}, defaultData.school, saved.school || {});
+
+    // Upgrade the earlier placeholder defaults for existing browser previews.
+    if (school.medium === "To be updated") {
+      school.medium = defaultData.school.medium;
+    }
+    if (school.students === "To be updated") {
+      school.students = defaultData.school.students;
+    }
+    if (school.teachers === "To be updated") {
+      school.teachers = defaultData.school.teachers;
+    }
+
     return {
       notices: saved.notices,
       contact: Object.assign({}, defaultData.contact, saved.contact || {}),
-      school: Object.assign({}, defaultData.school, saved.school || {})
+      school: school
     };
   }
 
@@ -155,10 +168,56 @@
   }
 
   function renderSchool(data) {
-    setText("public-school-medium", data.school.medium);
-    setText("public-school-students", data.school.students);
-    setText("public-school-teachers", data.school.teachers);
-    setText("public-school-timing", data.school.timing);
+    var medium = data.school.medium;
+    var timing = data.school.timing;
+
+    if (medium === "Marathi") {
+      medium = translation("medium_marathi_value", "Marathi");
+    }
+    if (timing === "To be updated") {
+      timing = translation("to_be_updated", "To be updated");
+    }
+
+    setText("public-school-medium", medium);
+    setAnimatedNumber("public-school-students", data.school.students);
+    setAnimatedNumber("public-school-teachers", data.school.teachers);
+    setText("public-school-timing", timing);
+  }
+
+  function setAnimatedNumber(id, value) {
+    var element = document.getElementById(id);
+    var target = Number.parseInt(String(value).replace(/[^0-9]/g, ""), 10);
+
+    if (!element || Number.isNaN(target)) {
+      setText(id, value);
+      return;
+    }
+
+    if (element.getAttribute("data-stat-target") === String(target)) {
+      return;
+    }
+
+    element.setAttribute("data-stat-target", String(target));
+
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      element.textContent = String(target);
+      return;
+    }
+
+    var start = performance.now();
+    var duration = 900;
+
+    function step(now) {
+      var progress = Math.min((now - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      element.textContent = String(Math.round(target * eased));
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    }
+
+    element.textContent = "0";
+    window.requestAnimationFrame(step);
   }
 
   function applyPublicData() {
