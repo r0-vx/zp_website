@@ -802,6 +802,37 @@ th {
 .utility-divider {
   color: #aaa;
 }
+.utility-icon {
+  width: 42px;
+  height: 41px;
+  padding: 8px 9px;
+  border: 0;
+  border-left: 1px solid var(--border);
+  background: transparent;
+  color: var(--charcoal);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.utility-icon:hover {
+  color: var(--orange-dark);
+  background: var(--orange-light);
+}
+.utility-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+.language-icon svg {
+  width: 25px;
+  height: 25px;
+}
 .utility-cell {
   min-width: 42px;
   height: 41px;
@@ -895,6 +926,15 @@ th {
     height: 38px;
     padding: 3px 5px;
     font-size: 20px;
+  }
+  .utility-icon {
+    width: 31px;
+    height: 38px;
+    padding: 5px 4px;
+  }
+  .utility-icon svg {
+    width: 21px;
+    height: 21px;
   }
   .masthead {
     min-height: 120px;

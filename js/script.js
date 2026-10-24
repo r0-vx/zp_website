@@ -44,6 +44,13 @@
       button.setAttribute("aria-pressed", active ? "true" : "false");
     });
 
+    document.querySelectorAll("[data-language-toggle]").forEach(function (button) {
+      var labelKey = language === "mr" ? "switch_to_english" : "switch_to_marathi";
+      var label = translations[language][labelKey];
+      button.setAttribute("aria-label", label);
+      button.setAttribute("title", label);
+    });
+
     try {
       localStorage.setItem("language", language);
     } catch (error) {
@@ -165,6 +172,12 @@
     document.querySelectorAll("[data-lang]").forEach(function (button) {
       button.addEventListener("click", function () {
         setLanguage(button.getAttribute("data-lang"));
+      });
+    });
+
+    document.querySelectorAll("[data-language-toggle]").forEach(function (button) {
+      button.addEventListener("click", function () {
+        setLanguage(document.documentElement.lang === "mr" ? "en" : "mr");
       });
     });
 
