@@ -132,14 +132,21 @@ button:focus {
   margin: 0 0 15px;
 }
 .banner {
-  min-height: 340px;
+  min-height: 0;
   background: var(--cream);
-  background-image: url("../images/school-banner.jpg?v=20261029b");
-  background-position: center 68%;
-  background-size: cover;
-  display: flex;
-  align-items: flex-end;
+  overflow: hidden;
   border: 1px solid var(--border);
+}
+.banner-carousel {
+  border: 0;
+}
+.banner-carousel .photo-track {
+  background: var(--cream);
+}
+.banner-carousel .school-photo {
+  height: clamp(280px, 42vw, 520px);
+  object-fit: contain;
+  object-position: center;
 }
 .banner-copy {
   background: var(--orange-dark);
@@ -470,7 +477,7 @@ th {
     padding: 18px 16px;
   }
   .banner {
-    min-height: 260px;
+    min-height: 0;
   }
   .banner h2 {
     font-size: 20px;
@@ -732,8 +739,8 @@ th {
   height: 390px;
   min-height: 0;
   display: block;
-  object-fit: cover;
-  object-position: center 55%;
+  object-fit: contain;
+  object-position: center;
   border: 1px solid var(--border);
   background: var(--cream);
 }
@@ -839,7 +846,7 @@ th {
   }
   .school-photo {
     height: 240px;
-    object-position: center 55%;
+    object-position: center;
   }
   .map-frame {
     height: 230px;
