@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title data-i18n="title_home">Zilla Parishad School Gokhiware</title>
-    <link rel="stylesheet" href="css/style.css?v=20261029c" />
+    <link rel="stylesheet" href="css/style.css?v=20261029d" />
   </head>
   <body>
     <a class="skip" href="#main-content" data-i18n="skip_content">Skip to content</a>
@@ -90,7 +90,13 @@
             </article>
           </div>
         </div>
-        <img class="school-photo" src="images/school-building.png" data-i18n-alt="school_photo_label" alt="School building photo" />
+        <div class="photo-scroll" tabindex="0" data-i18n-aria="photo_gallery_label" aria-label="School photo gallery">
+          <figure class="photo-slide"><img class="school-photo" src="images/school-building.png" data-i18n-alt="school_photo_label" alt="School building photo" /><figcaption data-i18n="school_photo_label">School building photo</figcaption></figure>
+          <figure class="photo-slide"><img class="school-photo" src="images/gallery/classroom-learning.jpeg" data-i18n-alt="alt_classroom" alt="Students learning in a classroom" /><figcaption data-i18n="caption_classroom">Classroom</figcaption></figure>
+          <figure class="photo-slide"><img class="school-photo" src="images/gallery/students-prayer.jpeg" data-i18n-alt="alt_prayer" alt="Students participating in a school prayer" /><figcaption data-i18n="caption_prayer">School Prayer</figcaption></figure>
+          <figure class="photo-slide"><img class="school-photo" src="images/gallery/school-event.jpeg" data-i18n-alt="alt_event" alt="School event with teachers and guests" /><figcaption data-i18n="caption_event">Celebration</figcaption></figure>
+        </div>
+        <p class="photo-scroll-hint" data-i18n="photo_scroll_hint">Scroll horizontally to view four school photos</p>
       </section>
       <section class="section visit-contact">
         <div>
