@@ -1003,6 +1003,14 @@ th {
   flex: 1;
   min-width: 0;
 }
+.school-mark-right {
+  width: 104px;
+  height: 104px;
+  margin-left: auto;
+  flex: none;
+  display: block;
+  object-fit: contain;
+}
 .school-name h1 {
   font-size: 28px;
   letter-spacing: 0.2px;
@@ -1084,6 +1092,10 @@ th {
   }
   .school-name small {
     font-size: 11px;
+  }
+  .school-mark-right {
+    width: 58px;
+    height: 58px;
   }
   .state-seal {
     width: 58px;
