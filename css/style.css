@@ -744,6 +744,10 @@ th {
   border: 1px solid var(--border);
   background: var(--cream);
 }
+.about-school-photo {
+  object-fit: cover;
+  object-position: center 56%;
+}
 .photo-carousel {
   position: relative;
   width: 100%;
