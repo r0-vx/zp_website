@@ -348,12 +348,23 @@ th {
   border: 1px solid var(--border);
   background: var(--orange-light);
 }
+.media-feature-video-only {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
 .gallery-video {
   display: block;
   width: 100%;
   height: 320px;
   background: #000;
   object-fit: cover;
+}
+.media-feature-video-only .gallery-video {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
 }
 .media-feature-copy {
   align-self: stretch;
@@ -488,6 +499,9 @@ th {
   }
   .gallery-video {
     height: 240px;
+  }
+  .media-feature-video-only .gallery-video {
+    height: auto;
   }
   .columns,
   .activity-grid,
