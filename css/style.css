@@ -385,7 +385,9 @@ th {
 .media-photo-card {
   margin: 0;
   border: 1px solid var(--border);
+  border-top: 3px solid var(--orange);
   background: #fff;
+  box-shadow: 0 2px 6px rgba(43, 43, 43, 0.08);
 }
 .media-photo {
   display: block;
@@ -396,10 +398,11 @@ th {
 }
 .media-photo-card figcaption {
   padding: 9px 12px;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--orange);
+  background: var(--orange-light);
   color: var(--charcoal);
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .map-placeholder {
   height: 210px;
